@@ -41,7 +41,7 @@ app.use('/read/username',addMsgToRequest);
 app.get('/read/username/:name',(req,res) => {
   let name = req.params.name;
   let users_with_name = req.users.filter(function(user) {
-    return user.uername === name;
+    return user.username === name;
   });
   console.log(users_with_name);
   if(users_with_name.length === 0) {
