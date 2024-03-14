@@ -12,3 +12,5 @@ router.post('/adduser', (req, res) => {
     });
     res.send('done');
   });
+
+  module.exports = router
